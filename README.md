@@ -98,7 +98,7 @@
 
 
 #### Задание 1
-1. [img6](./img/tf-01.1.1.png)
+1. ![img6](./img/tf-01.1.1.png)
 2. Согласно .gitignore исключаются все директории .terraform, файлы и папки начинающиеся с ``.terraform`` в корне проекта, игнорирование всех файлов ``*.tfstate`` и ``*.tfstate.*``. Я бы хранил чувствительные данные в файле ``personal.auto.tfvars``, так как он указан явно.
 3. [state файл](./src/state.txt)
 4. Первая ошибка это отсутствие имени у ресурса (см. [Resource Blocks](https://developer.hashicorp.com/terraform/language/resources/syntax)):
@@ -150,7 +150,7 @@
 #### Задание 2*
 
 ##### 2
-    ![img6](./img/tf-01.2.2.png)
+![img6](./img/tf-01.2.2.png)
 
 ##### 3
 
