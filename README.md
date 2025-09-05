@@ -98,7 +98,7 @@
 
 
 #### Задание 1
-1. 
+1. [img6](./img/tf-01.1.1.png)
 2. Согласно .gitignore исключаются все директории .terraform, файлы и папки начинающиеся с ``.terraform`` в корне проекта, игнорирование всех файлов ``*.tfstate`` и ``*.tfstate.*``. Я бы хранил чувствительные данные в файле ``personal.auto.tfvars``, так как он указан явно.
 3. [state файл](./src/state.txt)
 4. Первая ошибка это отсутствие имени у ресурса (см. [Resource Blocks](https://developer.hashicorp.com/terraform/language/resources/syntax)):
@@ -139,23 +139,18 @@
    ```bash
     31:   name  = "example_${random_password.random_string.result}"
    ```
-5. ![img5]()
+5. ![img5](./img/tf-01.1.5.png)
 6. Пересоздаётся контейнер и тянется последняя версия образа. Считай вопрос стоит, что могут сделать обновления в твоей системе. Опыт показывает, что порою очень сильно напакостить.
 
-   [img6](./img/tf-01.1.6.png)
+   ![img6](./img/tf-01.1.6.png)
 7. [terraform_after_destroy](./terraform_after_destroy.tfstate)
 8. Почему не удаляется понятно, у нас в ресурсе написано  ``keep_locally = true``. Ссылку на документацию нашёл только вот [эту](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs/resources/image#optional)
 
 
 #### Задание 2*
 
-##### 1
-
-    Скриншот
-
 ##### 2
-
-    Скриншот
+    ![img6](./img/tf-01.2.2.png)
 
 ##### 3
 
@@ -284,3 +279,5 @@ Terraform -> только инфраструктура (сети, ВМ, диск
 Docker Compose -> уже само приложение на поднятой ВМ. Payload
 
 
+##### 6
+  ![img6](./img/tf-01.2.6.png)

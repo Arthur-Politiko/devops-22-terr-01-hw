@@ -7,8 +7,8 @@ services:
     #   MYSQL_DATABASE: ${MYSQL_DATABASE}
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - MYSQL_DATABASE=pazbase
-      - MYSQL_USER=paz
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=wordpress
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
       - MYSQL_ROOT_HOST="%" # 
     ports:
